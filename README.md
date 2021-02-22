@@ -1,3 +1,4 @@
+Este portafolio fue realizado como un exámen en el curso de Interfaces Gráficas
 # Portafolio-Personal
 Autor: Fabricio Vindas Hernandez
 Este pequeño portafolio de evidencias personal con información mía, mis experiencias y conocimientos en proyectos. 
