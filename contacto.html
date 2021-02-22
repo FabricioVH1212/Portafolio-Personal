@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <title>Portafolio - Fabricio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="img/UCA.png" rel="icon">
+        <link href="img/UCA.png" rel="apple-touch-icon">
+        <link href="css/carta.css" rel = "stylesheet">  
+        <link href="css/style.css" rel = "stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <style>
+            .centrado{
+               display:block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+        </style>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+             <div id="toggle" onclick="toggle()"></div>  
+                &nbsp; 
+        </header>
+        <div class = "container"style = "position: relative;bottom: 50px;">
+            <div class = "centrado">
+                   <div class = "title ">
+                   <center>
+                    <span style = "--l: 'C';">C</span>
+                    <span style = "--l: 'O';">O</span>
+                    <span style = "--l: 'N';">N</span>
+                    <span style = "--l: 'T';">T</span>
+                    <span style = "--l: 'A';">A</span>
+                    <span style = "--l: 'C';">C</span>
+                    <span style = "--l: 'T';">T</span>
+                    <span style = "--l: 'A';">A</span>
+                    <span style = "--l: 'M';">M</span>
+                    <span style = "--l: 'E';">E</span>
+                    </center>
+                </div> 
+                <div class = "row">
+                    <div class = "col-md-6">
+                        <center class = "blend"><img class = "img blend rounded mx-auto d-block"src="img/Fabricio.jpeg"width="200px" height="200px"alt="Responsive image"><br>
+                            <div class = "social">
+                                <a href="index.html"><i class = "fa fa-user"></i></a>&nbsp;&nbsp;Fabricio Vindas Hernandez<br>
+                                <a href=""><i class = "fa fa-envelope"></i></a>&nbsp;&nbsp;fabriciomario01@gmail.com<br>
+                                <a href=""><i class="fa fa-phone"></i></a>&nbsp;&nbsp;+506 63261312<br><br>
+                                    <a href="https://www.facebook.com/fabricio.vindashernandez/"><i class="fa fa-facebook"target = "_BLANK"></i></a>&nbsp;
+                                    <a href="https://www.instagram.com/fabrivh_12/?hl=es-la"target = "_BLANK"><i class="fa fa-instagram"></i></a>&nbsp;
+                                    <a href="https://www.linkedin.com/in/fabricio-hernandez-0964661a5/"target = "_BLANK"><i class="fa fa-linkedin"></i></a>&nbsp;
+                                    <a href="https://github.com/FabricioVH1212"target = "_BLANK"><i class="fa fa-github"></i></a>&nbsp;
+                            </div>
+                        </center>
+                        <br>
+                    </div>
+                      <div class = "col-md-6">
+                        <div class="form-group row m-b-15">
+                            <label class="col-form-label col-md-3">Asunto:</label>
+                            <div class="col-md-9">
+                                <input type="text" name="txt_asunto" class="form-control m-b-5" placeholder="Ingrese el asunto" />
+                            </div>
+                        </div>
+                          <div class="form-group row m-b-15">
+                            <label class="col-form-label col-md-3">Correo electr&oacute;nico:</label>
+                            <div class="col-md-9">
+                                <input type="text" name="txt_correo" class="form-control m-b-5" placeholder="Ingrese el correo electr&oacute;nico" />
+                            </div>
+                        </div> 
+                         <div class="form-group row m-b-15">
+                                <label class="col-form-label col-md-3 ">Descripci&oacute;n:</label>
+                                <div class = "col-md-9">
+                                    <textarea class="form-control" name="txt_dsc"></textarea>
+                                </div>
+                        </div> 
+                    </div>
+                    <div class="col-md-12">
+                        <div class="float-right">
+                            <input type="submit" class="efecto btn btn-xl btn-warning m-r-5" name="btn_enviar" value="Contactar">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+         <footer >
+            <marquee class = "marquee"style = "background: -webkit-gradient(linear, 80% 20%, 10% 21%, from(#FF8800), to(#A91300));">Bienvenido a mi portafolio profesional, para continuar complete los campos y env&iacute;e con el bot&oacute;n "cont&aacute;ctar" donde podra comunicarse con mi persona.</marquee>
+        <p class="">Copyright 2021 - Todos los derechos reservados</p>
+        </footer>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+             &nbsp;
+            <li><a href="acerca.html">Acerca de</a></li>
+            &nbsp;
+            <li><a href="contacto.html">Cont&aacute;ctame</a></li>
+        </ul>
+    </div>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery.easing/jquery.easing.min.js"></script>
+</body>
+</html>
