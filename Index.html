@@ -1,70 +1,522 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <title>Portafolio - Fabricio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="img/UCA.png" rel="icon">
-        <link href="img/UCA.png" rel="apple-touch-icon">
-        <link href="css/style.css" rel = "stylesheet"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-        <style>
-            .centrado{
-               display:block;
-              margin-left: auto;
-              margin-right: auto;
-            }
-        </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Fabricio || Developer</title>
+  <meta content="autor" name="Fabricio Vindas Hernandez"/>
+  <meta content="copyright" name="Fabricio Vindas Hernandez"/>
+  <meta name="description" content="Ingeniero en Inform&aacute;tica apasionado por la transformaci&oacute;n digital. Desarrollo soluciones innovadoras enfocadas en automatizaci&oacute;n, optimizaci&oacute;n de procesos y eficiencia tecnol&oacute;gica.">
+  <meta name="keywords" content="Desarrollador Web, Programador Costa Rica, Ciberseguridad, Portafolio Developer, Ingenier&iacute;a Inform&aacute;tica, Apps, Sistemas Web, Automatizaci&oacute;n, Innovaci&oacute;n Tecnol&oacute;gica">
+  <meta http-equiv="cache-control" content="no-cache"/> 
+  <meta http-equiv="expires" content="0"/>
+  <meta http-equiv="expires" content="43200"/>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <section class="banner" id="sec">
-        <header>
-            <div class = "title">
-                <div id="toggle" onclick="toggle()"></div>  
-                &nbsp; 
-                <span style = "--l: 'B';">B</span>
-                <span style = "--l: 'I';">I</span>
-                <span style = "--l: 'E';">E</span>
-                <span style = "--l: 'N';">N</span>
-                <span style = "--l: 'V';">V</span>
-                <span style = "--l: 'E';">E</span>
-                <span style = "--l: 'N';">N</span>
-                <span style = "--l: 'I';">I</span>
-                <span style = "--l: 'D';">D</span>
-                <span style = "--l: 'D';">O</span>
-            </div>       
-        </header>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="content centrado">
-            <h2 ><b><br>Fabricio Vindas Hernandez</b><br><center><span>¿Qui&eacute;n soy&#63;</span></center></h2>
-            <p ><br>&nbsp;&nbsp;&nbsp;Soy actual estudiante de Ingenier&iacute;a en Inform&aacute;tica en la <br>Universidad Florencio del Castillo
-            nacido en Lim&oacute;n pero<br> actualmente viviendo en Cartago, con ganas de superaci&oacute;n.<br>
-             Durante este tiempo de formaci&oacute;n en el &aacute;rea de tecnolog&iacute;as <br>
-             de la informaci&oacute;n aprend&iacute; que me encanta la resoluci&oacute;n de<br>
-              problemas a lo largo de mi carrera. <br>Mi curiosidad intelectual, mi capacidad cognitiva y mi <br>
-              forma autodidacta me ha impulsado a encontrar <br>respuestas a las preguntas m&aacute;s urgentes.<br><br>&nbsp;</p>
-            <a class = "efecto" href="acerca.html">Con&oacute;ceme</a>
-        </div>
-        <div class = "centrado" id = "images">
-            <img class = "img " src="img/Fabricio.jpeg" width="300px" height="300px"onmouseover = "javascript: void(document.getElementById('images').style.fontSize='10em')"
-                onmouseout="javascript: void(document.getElementById('images').style.fontSize='1em')" >
-        </div>
-         <footer >
-                <marquee style = "background: -webkit-gradient(linear, 80% 20%, 10% 21%, from(#FF8800), to(#A91300));">Bienvenido a mi portafolio profesional, para iniciar vaya a "con&oacute;ceme" donde podra observar mis conocimientos , experiencias entre otros.</marquee>
-        
-        <p class="">Copyright 2021 - Todos los derechos reservados</p>
-        </footer>
-    </section>
-    <div id="navigation">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="title">
+              <span style="--l: 'B';">B</span>
+              <span style="--l: 'I';">I</span>
+              <span style="--l: 'E';">E</span>
+              <span style="--l: 'N';">N</span>
+              <span style="--l: 'V';">V</span>
+              <span style="--l: 'E';">E</span>
+              <span style="--l: 'N';">N</span>
+              <span style="--l: 'I';">I</span>
+              <span style="--l: 'D';">D</span>
+              <span style="--l: 'O';">O</span>
+              <span style="--l: 'S';">S</span>
+      </div> 
+      <nav id="navbar" class="navbar">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-             &nbsp;
-            <li><a href="acerca.html">Acerca de</a></li>
-            &nbsp;
-            <li><a href="contacto.html">Cont&aacute;ctame</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Acerca de m&iacute;</a></li>
+          <li><a class="nav-link scrollto" href="#journal">Conocimientos</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portafolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
         </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
     </div>
-    <script src="js/main.js"></script>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+
+  <div id="hero" class="home">
+    <div class="container">
+      <div class="hero-content">
+       <h1>Soy <span class="typed" data-typed-items="Fabricio Vindas, Especialista en Desarrollo Web, Ingeniero en Ciberseguridad, Consultor de Infraestructura, Consultor de Redes, Analista de Sistemas"></span></h1>
+       <p>Transformo ideas en soluciones digitales: web, escritorio, redes e infraestructura.</p>
+        <ul class="list-unstyled list-social">
+          <li><a href="http://wa.me/50663261312?text=Hola%20necesito%20informaci%C3%B3n%20lo%20m%C3%A1s%20r%C3%A1pido%20posible.%20Quedo%20a%20la%20espera"target="_BLANK"><i class="bi bi-whatsapp"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/fabriciovindas/"target="_BLANK"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://github.com/FabricioVH1212"target="_BLANK"><i class="bi bi-github"></i></a></li>
+        </ul>
+        <div class = "col-md-12">
+            <a href="#about" class="btn-get-started scrollto">Empezar</a>
+        </div>
+      </div>
+      <ul class="cuadrados">
+          <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+      </ul>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container ">
+        <div class="row justify-content-between">
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="assets/img/me.jpeg"class="img-responsive"alt="Fabricio Vindas Hernandez">
+              </div>
+            </div>
+            <a class = "btn btn-lg btn-primary"href="#contact">Cont&aacute;ctame</a>
+            <a class = "btn btn-lg btn-primary"href="assets/document/CV_Fabricio.pdf"download="CV_Fabricio.pdf"target="_BLANK">Descargar CV</a>
+          </div>
+          <div class="col-lg-7 ">
+             <div class="about-descr">
+              <h1 class="p-heading">¿Qui&eacute;n soy&#63;</h1>
+             <p class="separator text-white">
+              Ingeniero en Inform&aacute;tica especializado en Ciberseguridad, apasionado por resolver problemas y crear soluciones innovadoras.<br>  <br>
+              Curioso, autodidacta y siempre listo para enfrentar nuevos desaf&iacute;os tecnol&oacute;gicos.
+              </p>
+          </div>
+          <div class = "row text-white ">
+              <div class="col-md-6">
+                  <div class="about-info ">
+                      <p><span class="title-s">Nombre: </span><span>Fabricio Vindas</span></p>
+                     <p><span class="title-s">Perfil: </span></p>
+                      <div class="profile-tags">
+                        <span>Lic. Seguridad Inform&aacute;tica</span>
+                        <span>Ciberseguridad</span>
+                        <span>Tecnolog&iacute;as de Informaci&oacute;n</span>
+                        <span>Redes</span>
+                        <span>Infraestructura</span>
+                        <span>Programaci&oacute;n</span>
+                      </div>
+                      <p><span class="title-s">Email: </span> <span>fabriciomario01@gmail.com</span></p>
+                      <p><span class="title-s">Telef&oacute;no: </span><span>+506 6326-1312</span></p>
+                  </div>
+            </div>
+            <div class="col-md-6">
+            	<div class = "row">
+            		<div class = "col-md-6">
+            			<div class="skill-mf">
+		                    <p class="title-s text-white">Habilidades</p>
+		                    <span>HTML</span> <span class="pull-right">85%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>CSS3</span> <span class="pull-right">75%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>BOOTSTRAP</span><span class="pull-right"> 95%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>PHP</span> <span class="pull-right">90%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>JAVASCRIPT</span> <span class="pull-right">60%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>JSON Y XML</span> <span class="pull-right">85%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+                 		 </div>	
+            		</div>
+            		<div class = "col-md-6">
+            			<div class="skill-mf">
+		                    <p class="title-s">&nbsp;</p>
+		                    <span>JQUERY</span><span class="pull-right"> 50%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>AJAX</span> <span class="pull-right">50%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>MYSQL</span> <span class="pull-right">90%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>ORACLE</span> <span class="pull-right">60%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>.NET</span> <span class="pull-right">80%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                    <span>JAVA</span> <span class="pull-right">60%</span>
+		                    <div class="progress">
+		                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+		                    </div>
+		                 </div>
+            		</div>
+            	</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End About Section -->
+
+  	<!-- ======= Journal Section ======= -->
+    <div id="journal" >
+    <!-- begin container -->
+      <div class="container text-white">
+        <div class="section-title">
+          <h2 class="text-white text-center">Conocimientos t&eacute;cnicos y habilidades</h2>
+        </div>
+        <!-- begin row -->
+        <div class="row">
+        	<div class="col-md-12">
+        		<p class ="text-white">Apasionado por la transformaci&oacute;n digital de manera innovadora , evolucionando la digitalizaci&oacute;n de los procesos, automatizaci&oacute;n, optimizaci&oacute;n y eficiencia. Lo que la tecnolog&iacute;a transforma de manera radical es la experiencia de uso. A continuaci&oacute;n algunos de mis conocimientos:</p>
+        	</div>
+        	<div class="col-md-6">
+            <!-- Desarrollo Front End -->
+            <div class="form-group row m-b-15">
+              <h3><i class="bi bi-code-slash"></i>&nbsp;Desarrollo Front End</h3>
+              <div class="col-md-9">
+                <ul>
+                  <li>HTML5, CSS3, SASS, Bootstrap</li>
+                  <li>JavaScript, React, jQuery, Ajax</li>
+                  <li>Dise&ntilde;o web adaptable (Responsive Web Design)</li>
+                  <li>UX/UI: Experiencia e Interfaz de Usuario</li>
+                  <li>Accesibilidad y usabilidad</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Desarrollo Back End -->
+            <div class="form-group row m-b-15">
+              <h3><i class="bi bi-server"></i>&nbsp;Desarrollo Back End</h3>
+              <div class="col-md-9">
+                <ul>
+                  <li>Lenguajes y frameworks: PHP (POO, MVC, PDO), .NET / .NET Core, Python, Node.js</li>
+                  <li>APIs REST , Postman, manejo de JSON y XML</li>
+                  <li>Bases de datos relacionales y NoSQL: SQL Server, MySQL, PostgreSQL, Oracle, Cassandra</li>
+                  <li>Desarrollo y consultas SQL: PL/pgSQL, T-SQL; DML (INSERT, UPDATE, DELETE) y DDL (CREATE, ALTER, DROP)</li>
+                  <li>Stored procedures, funciones y queries optimizadas</li>
+                  <li>Seguridad y hardening de bases de datos: RBAC, permisos, auditor&iacute;a, cifrado y buenas pr&aacute;cticas de acceso seguro</li>
+                </ul>
+              </div>
+            </div>
+           <!-- Infraestructura y Servidores -->
+            <div class="form-group row m-b-15">
+              <h3><i class="bi bi-hdd-stack"></i>&nbsp;Infraestructura & Servidores</h3>
+              <div class="col-md-9">
+                <ul>
+                  <li>Administraci&oacute;n y aprovisionamiento de servidores: Linux (Ubuntu, Debian), Windows Server (IIS, Active Directory, Roles y Servicios)</li>
+                  <li>Configuraci&oacute;n y gesti&oacute;n de servidores web: Apache, Nginx, IIS</li>
+                  <li>Contenedores y virtualizaci&oacute;n: Docker (contenedorizaci&oacute;n, despliegue y orquestaci&oacute;n b&aacute;sica), m&aacute;quinas virtuales y entornos de desarrollo/producci&oacute;n</li>
+                  <li>Seguridad y hardening de infraestructura</li>
+                  <li>Automatizaci&oacute;n y scripting para gesti&oacute;n de sistemas (PowerShell, Bash)</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Redes y Ciberseguridad -->
+            <div class="form-group row m-b-15">
+              <h3><i class="bi bi-shield-lock"></i>&nbsp;Redes & Ciberseguridad</h3>
+              <div class="col-md-9">
+                <ul>
+                  <li>Networking & Protocolos: TCP/IP, Modelo OSI, VLAN, Layer 3 Switching, DHCP, DNS, MPLS, QoS, LACP</li>
+                  <li>Routing & Conectividad: OSPF, Static Routing, LAN/WAN/SD-WAN, VPN (IPsec/SSL), Alta disponibilidad y redundancia</li>
+                  <li>Seguridad de red: NGFW (Pol&iacute;ticas, NAT, App-ID, User-ID, DMZ), VPNs, IPS/IDS</li>
+                  <li>Administraci&oacute;n y resoluci&oacute;n de problemas: mantenimiento de redes, conectividad, rendimiento, monitoreo (SNMP, Syslog, flujo)</li>
+                  <li>An&aacute;lisis y monitoreo de tr&aacute;fico de red</li>
+                </ul>
+              </div>
+            </div>
+            <!-- SIEM & Seguridad en Eventos -->
+            <div class="form-group row m-b-15">
+              <h3><i class="bi bi-bar-chart-line"></i>&nbsp;SIEM & Splunk</h3>
+              <div class="col-md-9">
+                <ul>
+                  <li>Implementaci&oacute;n y configuraci&oacute;n de Splunk para monitorizaci&oacute;n de seguridad</li>
+                  <li>Ingesta y normalizaci&oacute;n de logs de sistemas, redes y aplicaciones</li>
+                  <li>Creaci&oacute;n de dashboards y reportes para detecci&oacute;n de incidentes</li>
+                  <li>Alertas en tiempo real y correlaci&oacute;n de eventos de seguridad</li>
+                  <li>Investigaci&oacute;n de incidentes y an&aacute;lisis forense de logs</li>
+                  <li>Integraci&oacute;n con fuentes externas y apps de Splunk para ampliar capacidades de seguridad</li>
+                </ul>
+              </div>
+            </div>
+            <!-- SEO y Posicionamiento -->
+            <div class="form-group row m-b-15">
+              <h3><i class="bi bi-search"></i>&nbsp;Posicionamiento SEO</h3>
+              <div class="col-md-9">
+                <ul>
+                  <li>Aplicaci&oacute;n de t&eacute;cnicas SEO para mejorar el posicionamiento en buscadores</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        	<div class = "col-md-6">
+        		<i class="bi bi-layers-fill efecto" style="font-size: 400px;"></i>
+        	</div>
+        	
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </div><!-- End Journal Section -->
+
+   <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container"><hr style="background: #cda434;">
+        <div class="services-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-briefcase"></i>
+                <span>DISE&Ntilde;O UI/UX</span>
+                <p class="separator">Creo interfaces intuitivas y experiencias de usuario atractivas que facilitan la interacci&oacute;n y maximizan la satisfacci&oacute;n del cliente.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-bar-chart"></i>
+                <span>DESARROLLO WEB</span>
+                <p class="separator">Construyo sitios web modernos, responsivos y funcionales, que transmiten la identidad de su marca y ofrecen una experiencia fluida a los visitantes.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-laptop"></i>
+                <span>APLICACIONES DE ESCRITORIO</span>
+                <p class="separator">Desarrollo aplicaciones de escritorio personalizadas que optimizan procesos y facilitan la gesti&oacute;n de informaci&oacute;n en su empresa.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-server"></i>
+                <span>BACK END & BASES DE DATOS</span>
+                <p class="separator">Dise&ntilde;o y mantengo sistemas robustos que gestionan datos de manera eficiente y segura, garantizando estabilidad y rendimiento a su negocio.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-hdd-stack"></i>
+                <span>INFRAESTRUCTURA & SERVIDORES</span>
+                <p class="separator">Gestiono y aprovisiono servidores y entornos de trabajo confiables, asegurando que sus sistemas funcionen de forma segura y continua.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-shield-lock"></i>
+                <span>REDES & CIBERSEGURIDAD</span>
+                <p class="separator">Protejo y optimizo sus redes, asegurando conectividad estable, seguridad de la informaci&oacute;n y continuidad de sus operaciones.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-bar-chart-line"></i>
+                <span>SIEM & MONITOREO DE SEGURIDAD</span>
+                <p class="separator">Implemento sistemas de monitoreo que detectan y previenen incidentes de seguridad, ayudando a mantener sus datos y sistemas siempre protegidos.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-gear"></i>
+                <span>AUTOMATIZACI&Oacute;N & SCRIPTING</span>
+                <p class="separator">Optimizo procesos y tareas repetitivas mediante automatizaci&oacute;n, ahorrando tiempo y reduciendo errores en sus operaciones.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-stars"></i>
+                <span>OTROS</span>
+                <p class="separator">Y mucho m&aacute;s: consultor&iacute;a, soporte t&eacute;cnico, implementaci&oacute;n de soluciones personalizadas y adaptadas a las necesidades de su negocio.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2 class ="text-white">Mi portafolio</h2>
+        </div>
+      </div>
+      <div class="container">
+      	<!-- row -->
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/trivago.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Sistema de reservaciones</h4>
+              <p>Este proyecto consiste en el desarrollo de un Sistema de Reservaciones para un hotel. 
+                Permite gestionar credenciales de acceso, visualizar las reservaciones existentes, 
+                registrar o modificar una reservaci&oacute;n y consultar su detalle. 
+                Adem&aacute;s, incluye el manejo completo del CRUD de habitaciones, 
+                siguiendo una interfaz inspirada en la est&eacute;tica de Trivago.</p>              
+              <a href="assets/img/trivago.png" 
+                data-gallery="portfolioGallery" 
+                class="portfolio-lightbox preview-link" 
+                title="<b>Sistema de Reservaciones</b><br>
+                Plataforma que permite la administraci&oacute;n de reservaciones hoteleras, 
+                incluyendo la gesti&oacute;n de usuarios, habitaciones y estados de ocupaci&oacute;n. 
+                Tambi&eacute;n ofrece una vista detallada de cada reservaci&oacute;n y un flujo sencillo 
+                para registrar nuevas solicitudes.<br>
+                <b>Lenguajes:</b> HTML, CSS, ASP.NET, Entity Framework, MVC, Javascript, SQL Server">
+                <i class="bi bi-eye"></i>
+              </a>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/store/StoreKings.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Store Kings</h4>
+              <p>Store Kings es una tienda virtual de ropa que se utilizar&aacute; para vender productos f&iacute;sicos mediante el comercio electr&oacute;nico.Una tienda virtual de ropa que se encarga de hacer que se vista como un rey </p>
+              <a href="assets/img/store/StoreKings.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="<b>Store Kings</b><br>Su misi&oacute;n es satisfacer el gusto de la clientela en cuanto a prendas de vestir, y brindar comodidad y elegancia al mismo tiempo que comprendiendo el acoplamiento del estilo personal e individual de los dise&ntilde;adores y plasm&aacute;ndolo as&iacute; en el gusto de los compradores de la tienda, llegando a suplir la demanda de gustos, abarcando la r&aacute;pida entrega y comodidad de compra virtualmente, alcanzando y atrayendo al p&uacute;blico m&aacute;s joven.<br><b>Lenguajes:</b> HTML,CSS,SASS,Bootstrap,Javascript,PHP,Jquery,Ajax,Mysql"><i class="bi bi-eye"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <img src="assets/img/tareas/LT_5.png" class="img-fluid app-thumb" alt="">
+            <div class="portfolio-info">
+              <h4>Lista de tareas</h4>
+              <p>En gestión de proyectos una tarea es una actividad que debe ser completada dentro de un período de tiempo definido. Una asignación o encargo es una tarea bajo la responsabilidad de un encargado o assignee, la cual tiene una fecha de finalización. </p>
+              <a href="assets/img/tareas/LT_2.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="<b>Lista de tareas</b><br> Esta es una aplicaci&oacute;n m&oacute;vil de gesti&oacute;n de tareas que utiliza una arquitectura basada en contenedores. El sistema emplea una imagen de MariaDB para la base de datos, CodeIgniter como framework para el backend y Framework7 para el frontend, facilitando su futura migración a dispositivos móviles. La comunicación entre los componentes se realiza mediante una API REST.<br><b>Lenguajes:</b> Codeigniter, Framework7, MariaDB"><i class="bi bi-eye"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/SIG/SIG.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mantenimiento Sistema de Gestiones UCA</h4>
+              <p>Un sistema de gesti&oacute;n es sin duda la mejor herramienta que una empresa puede tener para el control administrativo y financiero.</p>
+              <a href="assets/img/SIG/SIG.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="<b>Sistema de Gestiones UCA</b><br>Mantenimiento al Sistema de Gestiones entre sus funciones se encuentran las convalidaciones, validar obligatoriedad de campos, generador de reportes, registro de diferentes tipos de usuarios , vista de los aranceles y m&aacute;s..<br><b>Lenguajes:</b> HTML,Bootstrap,PHP,Javascript,Jquery,Ajax,Mysql"><i class="bi bi-eye"></i></a>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-app">
+            <img src="assets/img/movies/IMG_1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+             <h4>UCA Movies</h4>
+             <p>UCA Movies es una aplicaci&oacute;n web inspirada en plataformas como Netflix y Disney Plus.Permite explorar una lista de pel&iacute;culas populares y estrenos recientes, consumiendo datos en tiempo real mediante una API desarrollada en JavaScript.</p>
+             <a href="assets/img/movies/IMG_4.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="<b>UCA Movies</b><br> Esta aplicaci&oacute;n ofrece la posibilidad de agregar pel&iacute;culas a favoritos utilizando almacenamiento local, lo que garantiza una experiencia personalizada para cada usuario. Adem&aacute;s, cuenta con un bot&oacute;n 'Ver m&aacute;s' que despliega un modal detallado con el t&iacute;tulo, la descripci&oacute;n general de la pel&iacute;cula y una secci&oacute;n para agregar valoraciones.<br>
+              <b>Lenguajes:</b> HTML, CSS, Bootstrap, Javascript (ECMAScript 6), Jquery, JSON">
+              <i class="bi bi-eye"></i>
+            </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-web">
+            <img src="assets/img/estudiantes/UCA_1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Sistema de inscripci&oacute;n estudiantes</h4>
+              <p>Es un sistema de  inscripci&oacute; que permite agregar, consultar y eliminar estudiantes. Tambi&eacute;n observa puede leer un json con los estudiantes historicos.</p>
+              <a href="assets/img/estudiantes/UCA_2.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="<b>Sistema de inscripci&oacute;n estudiantes</b><br>Un sistema de inscripci&oacute;n diseñada para gestionar la inscripción de estudiantes en los cursos libres ofrecidos por la Universidad.<br><b>Lenguajes:</b> HTML5, CSS, Bootstrap, PHP(PDO), Ajax, JavaScript, Jquery, MySQL, Rest API"><i class="bi bi-eye"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+         <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection text-white">
+      <div class="container centrado">
+        <div class="contact-block1">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contact-contact ">
+                <h2 class="text-white mb-30">Ponerse en contacto</h2>
+                <ul class="contact-details">
+                  <li class="bi bi-geo-alt-fill"><span> El Molino</span></li>
+                  <li class="bi bi-map-fill"><span> Cartago, Costa Rica</span></li>
+                  <li class="bi bi-phone-fill"><span> +506 6326-1312</span></li>
+                  <li class="bi bi-envelope-fill"><span> fabriciomario01@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+               <i class="bi bi-person-lines-fill" ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container Fabricio Vindas Hernandez">
+      <div class="socials-media text-center">
+        <p>¿Tienes alguna duda o consulta?<br>Puedes consultar en cualquiera de mis redes!!</p>
+        <ul class="list-unstyled">
+          <li><a href="http://wa.me/50663261312?text=Hola%20necesito%20informaci%C3%B3n%20lo%20m%C3%A1s%20r%C3%A1pido%20posible.%20Quedo%20a%20la%20espera"target="_BLANK"><i class="bi bi-whatsapp"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/fabriciovindas/"target="_BLANK"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://github.com/FabricioVH1212"target="_BLANK"><i class="bi bi-github"></i></a></li>
+        </ul>
+      </div>
+      <p>&copy; Copyrights Portafolio. Todos los derechos reservados.</p>
+      <div class="credits">
+        Dise&ntilde;ado por<a class="text-warning"href="#"> Fabricio Vindas Hernandez</a>
+      </div>
+    </div>
+  </div><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

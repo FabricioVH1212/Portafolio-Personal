@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Bloqueo solo de archivos innecesarios para SEO
+Disallow: /README.md
+Disallow: /document/
+
+# Permitir recursos estáticos (rendereo completo)
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /assets/vendor/
+
+# Mapa del sitio
+Sitemap: https://sitioweb.com/sitemap.xml
